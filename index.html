@@ -22,8 +22,9 @@
       margin: 0;
     }
     header {
-      padding: 40px 20px 20px;
+      padding: 40px 20px;
       background: linear-gradient(to right, #ff416c, #ff4b2b);
+      text-align: center;
     }
     header h1 {
       margin: 0;
@@ -64,9 +65,12 @@
       border-radius: 12px;
       border: none;
     }
-    .boton-whatsapp {
+    .contacto {
+      margin-top: 40px;
+    }
+    .boton-whatsapp, .boton-email {
       display: inline-block;
-      margin-top: 20px;
+      margin: 10px;
       background-color: #25D366;
       color: white;
       padding: 15px 30px;
@@ -74,6 +78,23 @@
       text-decoration: none;
       font-size: 1.2em;
       box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+    .boton-email {
+      background-color: #4285f4;
+    }
+    .pago {
+      background-color: rgba(255,255,255,0.1);
+      border-radius: 12px;
+      padding: 20px;
+      margin: 30px auto;
+      max-width: 700px;
+      color: #ffda7c;
+      font-size: 1.1em;
+    }
+    .pago img {
+      height: 30px;
+      vertical-align: middle;
+      margin-left: 5px;
     }
     footer {
       margin-top: 60px;
@@ -89,30 +110,40 @@
   <div class="overlay">
     <header>
       <h1>Fiesta de la Nostalgia 2025</h1>
-      <p>Hotel Radisson Montevideo</p>
+      <p>Jueves 21 de Agosto · Hotel Radisson Montevideo</p>
     </header>
 
     <div class="contenido">
-      <h2>🌟 Jueves 21 de Agosto</h2>
+      <h2>🌟 Información del Evento</h2>
       <ul>
         <li>🕑 <strong>Clase:</strong> 20:00 a 22:00 hs</li>
         <li>🕺 <strong>Fiesta:</strong> 22:00 a 00:00 hs</li>
         <li>🍸 <strong>Barra de tragos disponible</strong></li>
-        <li>🌹 <strong>Con tu entrada accedés a ambos eventos</strong></li>
-        <li>🚫 <strong>Mayores de 18 años</strong></li>
-        <li>🎭 <strong>No te olvides del disfraz</strong></li>
+        <li>🌹 <strong>Con tu entrada accedés a ambos eventos, o al que tú prefieras</strong></li>
+        <li>🚫 <strong>Solo para mayores de 18 años</strong></li>
+        <li>🎭 <strong>¡No te olvides del disfraz!</strong></li>
       </ul>
+
+      <div class="pago">
+        <p><strong>🎟 Costo de la entrada:</strong></p>
+        <p>$400 (contado o transferencia bancaria)</p>
+        <p>$450 usando MercadoPago <img src="https://logodownload.org/wp-content/uploads/2019/06/mercado-pago-logo-1.png" alt="MercadoPago" /></p>
+        <p>Hasta en 12 cuotas</p>
+      </div>
 
       <div class="subtitulo">Así vivimos la magia en 2024... ¡y este año va a ser aún mejor!</div>
       <div class="video">
         <iframe src="https://player.vimeo.com/video/1074954136?h=03acb613cb" allowfullscreen></iframe>
       </div>
 
-      <a href="https://wa.me/598XXXXXXXX" class="boton-whatsapp" target="_blank">✉️ Quiero mi entrada</a>
+      <div class="contacto">
+        <a href="https://wa.me/59892378773" class="boton-whatsapp" target="_blank">📲 Reservá por WhatsApp</a>
+        <a href="mailto:seba@zumbaconseba.com" class="boton-email" target="_blank">📧 Contacto por Email</a>
+      </div>
     </div>
 
     <footer>
-      &copy; 2025 Zumba con Seba - nostalgia.zumbaconseba.com
+      &copy; 2025 Zumba con Seba · nostalgia.zumbaconseba.com
     </footer>
   </div>
 </body>
